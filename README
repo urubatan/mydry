@@ -1,7 +1,19 @@
 Mydry
 =====
 
-Introduction goes here.
+This plugin emulates some of the old "scaffold" functionality, but using RESTFul controllers, will_paginate for pagination, partials for forms and enforces the model first approach.
+
+The basic workflow is this:
+1 - create a migration and define your initial table
+2 - ./script/generate drymodel model_name
+	here the model file generated for you, will have all the validations and belongs defined in the database table
+	you can add more validations, configure relationships, code your model
+3 - ./script/generate dryscaffold model_name
+	here the scaffold will import the model definition (currently it is working with the database, but the next release will import from the model), and generate all the boilerplate code for you.
+
+
+The origin of this plugin was the need to define a validation in the migration (Eg.: :null => false), in the model again (Eg.: validates_presence_of :column), then again in the view, ...
+The way this generators work I define one thing once and it is generated in the other places for me.
 
 
 Example
@@ -10,4 +22,4 @@ Example
 Example goes here.
 
 
-Copyright (c) 2008 [name of plugin creator], released under the MIT license
+Copyright (c) 2008 Rodrigo Urubatan Ferreira Jardim, released under the MIT license
