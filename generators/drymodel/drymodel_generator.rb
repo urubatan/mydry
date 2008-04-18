@@ -6,7 +6,7 @@ class DrymodelGenerator < Mydry::GeneratorBase
 
     record do |m|
       m.template 'model.rb', "app/models/#{file_name}.rb"
-      m.template 'fixtures.yml', "test/fixtures/#{file_name}.yml"
+      m.template 'fixtures.yml', "test/fixtures/#{file_name.pluralize}.yml"
       m.template 'unit_test.rb', "test/unit/#{file_name}_test.rb"
     end
   end
