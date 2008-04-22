@@ -1,0 +1,10 @@
+--- 
+:dependencies: 
+- rails
+:author: Rodrigo Urubatan Ferreira Jardim
+:summary: An easy way to generate models for your application based on the information you already provided in the migrations
+:name: mydry_generator
+:email: rodrigo@urubatan.com.br
+:has_rdoc: true
+:homepage: http://www.urubatan.info/tag/mydry/
+:version: "0.2"
