@@ -39,7 +39,6 @@ generators/dryscaffold/templates/view_index.html.erb
 generators/dryscaffold/templates/view_new.html.erb
 generators/dryscaffold/templates/view_show.html.erb
 lib
-lib/dryhelpers.rb
 lib/mydry.rb
 README
 test/
