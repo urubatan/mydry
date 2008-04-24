@@ -6,7 +6,22 @@ class <%= class_name %>Test < ActiveSupport::TestCase
     assert true
   end
 
-  def test_validations
+<%- notnulls.each do |nn| %>
+  def test_<%= nn %>_not_null
     assert false
   end
+
+<% end -%>
+<%- lengths.each do |nn| %>
+  def test_<%= nn[0] %>_length
+    assert false
+  end
+
+<% end -%>
+<%- numerics.each do |nn| %>
+  def test_<%= nn %>_numeric_only
+    assert false
+  end
+
+<% end -%>
 end
