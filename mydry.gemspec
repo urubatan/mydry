@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "mydry_generator"
-  s.version = "0.2.1"
+  s.version = "0.2.2"
   s.date = "2008-04-26"
   s.summary = "An easy way to generate models for your application based on the information you already provided in the migrations"
   s.email = "rodrigo@urubatan.com.br"
@@ -12,5 +12,5 @@ Gem::Specification.new do |s|
   s.test_files = ["test/mydry_test.rb"]
   s.rdoc_options = ["--main", "README"]
   s.extra_rdoc_files = ["README"]
-  s.add_dependency("rails", ["> 2.0.2"])
+  s.add_dependency("rails", ["> 2.0.0"])
 end
